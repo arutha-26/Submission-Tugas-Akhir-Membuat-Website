@@ -1,2 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* 
+Notes
+font use:
+    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+
+*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.font-poppins{
+    font-family: "Poppins", sans-serif;
+}
+
+.font-kr{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* Header style */
+
+header .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .navbar img.flag{
+    width: 150px;
+    height: 150px;
+}
+
+header .navbar h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 450px 0 150px;
+    transition: all 2s;
+}
+
+header .navbar h1:hover{
+    transition: all 2s;
+    cursor: pointer;
+    border-bottom: 1.5px green solid ;
+}
+
+header .navbar li{
+ list-style: none;
+ display: inline;
+ margin: 0px 100px 0 0;
+ font-size: large;
+ font-weight: bold;
+ transition: all 0.5s;
+}
+
+header .navbar li:hover{
+    border-bottom: 2px green solid;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+header {
+    position: relative;
+    background: url('../image/img-3.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%; 
+}
+
+header .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    transition: all 2s;
+}
+
+header .content h1{
+    text-transform: capitalize;
+    font-size: 72px;
+    margin: 0px;
+    font-weight: bolder;
+}
+
+header .content p{
+    max-width: 50%;
+    font-size: 24px;
+    text-align: center;
+}
+
+header .content a{
+    background-color: #2e4a1b;
+    border-radius: 50px;
+    font-size: 24px;
+    color: #EDEFEB;
+    padding: 10px 35px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+header .content a:hover{
+    background-color: #4d7c2d;
+    transition: all 1s;
+
+}
+
+
+
+/* Header style */
