@@ -37,6 +37,7 @@ body, html {
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
+    transition: all 0.5s;
 }
 
 .font-poppins{
@@ -48,6 +49,14 @@ body, html {
 }
 
 /* Header style */
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: rgb(76, 76, 76); 
+    z-index: 99 !important;
+    transition: all 1s;
+}
 
 header .navbar{
     position: relative;
@@ -55,6 +64,8 @@ header .navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: all 1s;
+    padding: 10px 0;
 }
 
 header .navbar img.flag{
@@ -276,7 +287,7 @@ text-indent: 25px;
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 9;
 }
 
 .col.wrap .carousel-button.prev {
