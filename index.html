@@ -12,15 +12,15 @@
     <header>
         <div class="navbar">
             <!-- <img src="assets/image/korean_flag.webp" alt="korean flag" class="flag"> -->
-            <h1 class="font-kr">대한민국</h1>
+            <h1 class="font-kr"><a href="#top">대한민국</a></h1>
             <ul>
-                <li class="font-poppins">Seoul</li>
-                <li class="font-poppins">Busan</li>
-                <li class="font-poppins">Incheon</li>
-                <li class="font-poppins">Jeju</li>
+                <li class="font-poppins"><a href="#seoul">Seoul</a></li>
+                <li class="font-poppins"><a href="#busan">Busan</a></li>
+                <li class="font-poppins"><a href="#incheon">Incheon</a></li>
+                <li class="font-poppins"><a href="#jeju">Jeju</a></li>
             </ul>
         </div>
-        <div class="content">
+        <div class="content" id="top">
             <h1 class="font-poppins">south korea</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio autem quo nemo, culpa sapiente
                 consequuntur reiciendis veniam, eveniet voluptate, aliquam ad id itaque doloremque. Beatae.</p>
@@ -30,71 +30,281 @@
     <!-- main konten -->
     <main id="main">
         <div class="content">
-          <div class="row">
-            <div class="col">
-                <h1>let's explore korea</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quo placeat nihil, nemo ducimus amet fugiat qui voluptatibus eligendi ratione facere dolor deserunt voluptas pariatur quibusdam recusandae, quisquam voluptatem quod hic et, eos cumque non sapiente minima! Voluptate, necessitatibus nesciunt.</p>
-            </div>
-            <div class="col wrap">
-                <!-- card -->
-                <div class="carousel-container">
-                    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-                    <div class="carousel-wrapper">
-                        <div class="carousel">
-                            <div class="card">
-                                <img src="https://via.placeholder.com/150" alt="Card image" class="card-img">
-                                <div class="card-body">
-                                    <h2 class="card-title">Card 1</h2>
-                                    <p class="card-text">This is some example text for the first card.</p>
-                                    <a href="#" class="card-link">Read More</a>
+            <div class="row">
+                <div class="col">
+                    <h1>let's explore korea</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quo placeat nihil, nemo ducimus
+                        amet fugiat qui voluptatibus eligendi ratione facere dolor deserunt voluptas pariatur quibusdam
+                        recusandae, quisquam voluptatem quod hic et, eos cumque non sapiente minima! Voluptate,
+                        necessitatibus nesciunt.</p>
+                </div>
+                <div class="col wrap">
+                    <!-- card -->
+                    <div class="carousel-container" id="carousel1">
+                        <button class="carousel-button prev" onclick="prevSlide('carousel1')">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel">
+                                <div class="card">
+                                    <img src="assets/image/seoul.jpeg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Seoul</h2>
+                                        <p class="card-text">This is some example text for the first card.</p>
+                                        <a href="#seoul" class="card-link">Read More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img src="https://via.placeholder.com/150" alt="Card image" class="card-img">
-                                <div class="card-body">
-                                    <h2 class="card-title">Card 2</h2>
-                                    <p class="card-text">This is some example text for the second card.</p>
-                                    <a href="#" class="card-link">Read More</a>
+                                <div class="card">
+                                    <img src="assets/image/busan.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Busan</h2>
+                                        <p class="card-text">This is some example text for the second card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img src="https://via.placeholder.com/150" alt="Card image" class="card-img">
-                                <div class="card-body">
-                                    <h2 class="card-title">Card 3</h2>
-                                    <p class="card-text">This is some example text for the third card.</p>
-                                    <a href="#" class="card-link">Read More</a>
+                                <div class="card">
+                                    <img src="assets/image/incheon.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Incheon</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img src="https://via.placeholder.com/150" alt="Card image" class="card-img">
-                                <div class="card-body">
-                                    <h2 class="card-title">Card 4</h2>
-                                    <p class="card-text">This is some example text for the third card.</p>
-                                    <a href="#" class="card-link">Read More</a>
+                                <div class="card">
+                                    <img src="assets/image/jeju.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Jeju</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-button next" onclick="nextSlide('carousel1')">&#10095;</button>
                     </div>
-                    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
                 </div>
             </div>
-          </div>
         </div>
-        <div class="container">
-            <!-- navbar content -->
-            
+        <!-- Seoul -->
+        <div class="content" id="seoul">
+            <div class="row">
+                <div class="col">
+                    <h1>let's explore korea</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quo placeat nihil, nemo ducimus
+                        amet fugiat qui voluptatibus eligendi ratione facere dolor deserunt voluptas pariatur quibusdam
+                        recusandae, quisquam voluptatem quod hic et, eos cumque non sapiente minima! Voluptate,
+                        necessitatibus nesciunt.</p>
+                </div>
+                <div class="col wrap">
+                    <!-- card -->
+                    <div class="carousel-container" id="carousel2">
+                        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel">
+                                <div class="card">
+                                    <img src="assets/image/seoul.jpeg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Seoul</h2>
+                                        <p class="card-text">This is some example text for the first card.</p>
+                                        <a href="#seoul" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/busan.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Busan</h2>
+                                        <p class="card-text">This is some example text for the second card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/incheon.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Incheon</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/jeju.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Jeju</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <!-- navbar content -->
+        <!-- Busan -->
+        <div class="content" id="busan">
+            <div class="row">
+                <div class="col">
+                    <h1>let's explore korea</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quo placeat nihil, nemo ducimus
+                        amet fugiat qui voluptatibus eligendi ratione facere dolor deserunt voluptas pariatur quibusdam
+                        recusandae, quisquam voluptatem quod hic et, eos cumque non sapiente minima! Voluptate,
+                        necessitatibus nesciunt.</p>
+                </div>
+                <div class="col wrap">
+                    <!-- card -->
+                    <div class="carousel-container" id="carousel2">
+                        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel">
+                                <div class="card">
+                                    <img src="assets/image/seoul.jpeg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Seoul</h2>
+                                        <p class="card-text">This is some example text for the first card.</p>
+                                        <a href="#seoul" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/busan.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Busan</h2>
+                                        <p class="card-text">This is some example text for the second card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/incheon.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Incheon</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/jeju.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Jeju</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Incheon -->
+        <div class="content" id="incheon">
+            <div class="row">
+                <div class="col">
+                    <h1>let's explore korea</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quo placeat nihil, nemo ducimus
+                        amet fugiat qui voluptatibus eligendi ratione facere dolor deserunt voluptas pariatur quibusdam
+                        recusandae, quisquam voluptatem quod hic et, eos cumque non sapiente minima! Voluptate,
+                        necessitatibus nesciunt.</p>
+                </div>
+                <div class="col wrap">
+                    <!-- card -->
+                    <div class="carousel-container" id="carousel2">
+                        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel">
+                                <div class="card">
+                                    <img src="assets/image/seoul.jpeg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Seoul</h2>
+                                        <p class="card-text">This is some example text for the first card.</p>
+                                        <a href="#seoul" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/busan.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Busan</h2>
+                                        <p class="card-text">This is some example text for the second card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/incheon.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Incheon</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/jeju.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Jeju</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Jeju -->
+        <div class="content" id="jeju">
+            <div class="row">
+                <div class="col">
+                    <h1>let's explore korea</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quo placeat nihil, nemo ducimus
+                        amet fugiat qui voluptatibus eligendi ratione facere dolor deserunt voluptas pariatur quibusdam
+                        recusandae, quisquam voluptatem quod hic et, eos cumque non sapiente minima! Voluptate,
+                        necessitatibus nesciunt.</p>
+                </div>
+                <div class="col wrap">
+                    <!-- card -->
+                    <div class="carousel-container" id="carousel2">
+                        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel">
+                                <div class="card">
+                                    <img src="assets/image/seoul.jpeg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Seoul</h2>
+                                        <p class="card-text">This is some example text for the first card.</p>
+                                        <a href="#seoul" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/busan.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Busan</h2>
+                                        <p class="card-text">This is some example text for the second card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/incheon.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Incheon</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/image/jeju.jpg" alt="Card image" class="card-img">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Jeju</h2>
+                                        <p class="card-text">This is some example text for the third card.</p>
+                                        <a href="#" class="card-link">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- creator website -->
         <div class="container">
-            <!-- navbar content -->
-        </div>
-        <div class="container">
-            <!-- navbar content -->
-        </div>
-        <div class="container">
-            <!-- creator website -->
         </div>
     </main>
     <!-- footer konten -->

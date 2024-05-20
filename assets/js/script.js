@@ -1,31 +1,35 @@
-let currentIndex = 0;
+let carousels = {
+    'carousel1': 0,
+    'carousel2': 0
+};
 
-function showSlide(index) {
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
-    const slides = document.querySelectorAll('.card');
-    const totalSlides = slides.length - 1;
+function showSlide(carouselId, index) {
+    const carouselWrapper = document.querySelector(`#${carouselId} .carousel-wrapper`);
+    const slides = document.querySelectorAll(`#${carouselId} .card`);
+    const totalSlides = 3;
 
     if (index >= totalSlides) {
-        currentIndex = 0; 
+        carousels[carouselId] = 0;
     } else if (index < 0) {
-        currentIndex = totalSlides - 1; 
+        carousels[carouselId] = totalSlides - 1;
     } else {
-        currentIndex = index;
+        carousels[carouselId] = index;
     }
 
-    const offset = -currentIndex * 320; 
+    const offset = -carousels[carouselId] * 320; // Adjust according to card width + margin
     carouselWrapper.style.transform = `translateX(${offset}px)`;
 }
 
-function nextSlide() {
-    showSlide(currentIndex + 1);
+function nextSlide(carouselId) {
+    showSlide(carouselId, carousels[carouselId] + 1);
 }
 
-function prevSlide() {
-    showSlide(currentIndex - 1);
+function prevSlide(carouselId) {
+    showSlide(carouselId, carousels[carouselId] - 1);
 }
 
-showSlide(currentIndex);
+Object.keys(carousels).forEach(carouselId => showSlide(carouselId, 0));
+
 
 
 // sticky javascript
